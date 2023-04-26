@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Imperial Agenda</title>
+        <meta property="og:title" content="Imperial Agenda" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="description" content="" />
+        <meta property="og:description" content="" />
+        <!-- <link rel="canonical" href="" />
+        <meta property="og:url" content="" /> -->
+        <meta property="og:site_name" content="Imperial Agenda" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:title" content="Imperial Agenda" />
+        <meta name="twitter:site" content="@regpaq" />
+        <meta name="twitter:creator" content="@regpaq" />
+        <link rel="preload" as="font" type="font/woff2" href='../fonts/spline-sans-mono-v4-latin-500.woff2' crossorigin  />
+        <link rel="stylesheet" href="sass/theme.css">
+		<script src="script.js" defer></script>
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href=".png">
+        <link rel="icon" type="image/png" sizes="32x32" href=".png">
+        <link rel="icon" type="image/png" sizes="16x16" href=".png"> -->
+        <style>
+			@font-face {
+			font-family: 'Spline Sans Mono';
+			font-style: normal;
+			font-weight: 500;
+			src: local(''),
+				url('../fonts/spline-sans-mono-v4-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+				url('../fonts/spline-sans-mono-v4-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+			}
+        </style> 
+    </head>
+	<body>
+		<header>
+			<div class="logo-wrapper">
+				<div class="dash-short glow-normal"></div><div class="dot glow-normal"></div><div class="dot glow-normal"></div><div class="dash-long glow-normal"></div>
+			</div>
+		</header>
+		<main>
+			<div id="task-list-switcher">
+				<span id="task-toggle" class="no-select active">tasks</span>
+				<span id="done-toggle" class="no-select">done</span>
+			</div>
+			<div id="task-list" class="state-visible"></div>
+			<div id="done-list" class="state-hidden"></div>
+			<div id="new-task">
+				<button id="add-new-task-button">new task</button>
+			</div>
+			<div id="background">
+				<div id="blur-1"></div>
+				<div id="blur-2"></div>
+				<div id="stars">
+					<div id="star-1"></div>
+					<div id="star-2"></div>
+					<div id="star-3"></div>
+					<div id="star-4"></div>
+					<div id="star-5"></div>
+					<div id="star-6"></div>
+					<div id="star-7"></div>
+					<div id="star-8"></div>
+					<div id="star-9"></div>
+					<div id="star-10"></div>
+					<div id="star-11"></div>
+					<div id="star-12"></div>
+					<div id="star-13"></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Built by <a href="https://regpaq.com/" target="_blank" tabindex="-1">regpaq</a></p>
+			<p id="shortcuts-link"><a href="">Keyboard shortcuts</a></p>
+		</footer>
+		<div id="shortcuts-modal" class="modal">
+			<div class="modal-content">
+			  <span>Keyboard shortcuts</span>
+			  <table>
+				<tr>
+					<td>See keyboard shortcuts</td>
+					<td>Ctrl+/</td>
+				</tr>
+				<tr>
+					<td>New task</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>Discard task draft</td>
+					<td>Esc</td>
+				</tr>
+				<tr>
+					<td>Confirm new task (while in a task or due date input)</td>
+					<td>Enter or Return</td>
+				</tr>
+				<tr>
+					<td>View Task list</td>
+					<td>T</td>
+				</tr>
+				<tr>
+					<td>View Done list</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<td>Toggle task complete or uncomplete (while focused on a task)</td>
+					<td>C or Enter or Return</td>
+				</tr>
+				<tr>
+					<td>Remove a task (while focused on a task)</td>
+					<td>R or Backspace or Delete</td>
+				</tr>
+			  </table>			  
+			</div>
+		  </div>
+	</body>
+</html>

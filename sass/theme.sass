@@ -1,0 +1,47 @@
+@charset "utf-8"
+
+// --------------------------------------------------------
+//			Variables
+// --------------------------------------------------------
+
+// Font
+$font-stack: 				'Spline Sans Mono', monospace
+$base-font-size:            14px !default
+$small-font-size:           10px !default
+$base-font-weight:          500 !default
+$small-font-size:           $base-font-size * 0.875 !default
+
+// Spacing
+$base-size:                 16px !default
+$base-line-height:          1.6 !default
+$spacing-unit:              8px !default
+
+// Media Query Widths
+$small:                     375px !default
+$shmedium:                  568px !default
+$medium:                    768px !default
+$regular:                   1024px !default
+$large:                     1280px !default
+$xlarge:					1440px !default
+$xxlarge:					1700px !default
+
+// Color Themes
+$dark-colors: ("bg":hsl(0, 0, 0, 100%),"bg-hl0":hsl(0, 0, 9, 100%),"bg-hl1":hsl(0, 0, 9, 80%),"bg-hl2":hsl(0, 0, 14, 70%),"light-white":hsl(223, 84, 97, 100%),"glow-normal":hsl(54, 100, 83, 25%),"glow-bright":hsl(54, 100, 83, 35%),"glow-red":hsl(0, 100, 50, 35%),"glow-green":hsl(90, 100, 50, 30%),"text":hsl(0, 0, 100, 100%),"text-light":hsl(95, 5, 75, 100%),"text-lighter":hsl(0, 0, 65, 100%),"red":hsl(4, 74, 56, 100%),"reddish-white":hsl(0, 52, 93, 100%),"yellowish-white":hsl(54, 11, 89, 100%),"greenish-white":hsl(0, 0, 85, 100%),"greenish-grey":hsl(95, 5, 75, 100%),"grey-inactive":hsl(96, 5, 40, 100%))
+
+// --------------------------------------------------------
+//			Mixins and Functions
+// --------------------------------------------------------
+
+// Easier CSS Variables to use in .scss files
+@function v($color-name)
+	@return var(--color-#{$color-name})
+
+@mixin glow($color)
+	filter: drop-shadow(0px 0px 3px $color) drop-shadow(0px 0px 2px $color) drop-shadow(0px 0px 1px $color) drop-shadow(0px 0px .75px $color) drop-shadow(0px 0px .4px $color) drop-shadow(0px 0px 0.2px $color)
+
+
+// --------------------------------------------------------
+//			Import Partials
+// --------------------------------------------------------
+
+@import "theme/normalize", "theme/layout", "theme/style"
