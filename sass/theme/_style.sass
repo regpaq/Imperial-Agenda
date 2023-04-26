@@ -4,12 +4,6 @@ html[data-theme="dark"]
 	@each $name, $color in $dark-colors
 		--color-#{$name}: #{$color}
 
-@font-face
-	font-family: 'Spline Sans Mono'
-	font-style: normal
-	font-weight: 500
-	src: url('./fonts/spline-sans-mono-v4-latin-500.woff2') format('woff2')
-
 html
 	background-color: v(bg)
 	font-family: $font-stack
