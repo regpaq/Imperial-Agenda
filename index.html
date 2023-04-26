@@ -29,6 +29,10 @@
 				url("./fonts/spline-sans-mono-v4-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
 				url("./fonts/spline-sans-mono-v4-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 			}
+			#shortcuts-modal { /* ensure shortcuts modal doesn't flash on load */
+				visibility: hidden;
+				opacity: 0;
+			}
         </style> 
     </head>
 	<body>
