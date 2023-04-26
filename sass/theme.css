@@ -419,6 +419,12 @@ html[data-theme=dark] {
   --color-grey-inactive: hsl(96, 5%, 40%);
 }
 
+@font-face {
+  font-family: "Spline Sans Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/spline-sans-mono-v4-latin-500.woff2") format("woff2");
+}
 html {
   background-color: var(--color-bg);
   font-family: "Spline Sans Mono", monospace;
@@ -428,12 +434,6 @@ html {
   text-transform: uppercase;
 }
 
-@font-face {
-  font-family: "Spline Sans Mono";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/spline-sans-mono-v4-latin-500.woff2") format("woff2");
-}
 h1 {
   font-size: 2rem;
 }
