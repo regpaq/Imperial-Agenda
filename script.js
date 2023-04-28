@@ -1,4 +1,7 @@
 
+// TODO: fix flashing of empty placeholder text on load 'hmm here's nothing to do'
+// TODO: general file cleanup
+
 // --------------------------------------------------------
 //			global variables & event listeners
 // --------------------------------------------------------
